@@ -13,21 +13,23 @@ const StarshipDetails = (props) => {
 
   return ( 
     <>
-      <div className="detail-div">
-        <h1>Starship Details!</h1>
+      <h1>Starship Details!</h1>
+      <div>
 
         {starshipDetails.length?
         <>
-          <h2>Name: {starshipDetails.name}</h2>
-          <h4>Model: {starshipDetails.model}</h4>
-          <h4>Crew: {starshipDetails.crew}</h4>
+          <div className="detail-div">
+            <h2>Name: {starshipDetails.name}</h2>
+            <h4>Model: {starshipDetails.model}</h4>
+            <h4>Crew: {starshipDetails.crew}</h4>
+            <a href="/">Return</a>
+          </div>
         </>
         :
         <>
          <h2>Loading Ship Deatails!!!</h2>
         </>
         }
-        <a href="/">Return</a>
       </div>
     </>
    );
