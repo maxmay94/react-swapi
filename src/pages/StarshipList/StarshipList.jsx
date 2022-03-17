@@ -13,7 +13,7 @@ const StarshipList = (props) => {
 
   return ( 
     <>
-      <h1>Starship List!</h1>
+      <h1>Starship List</h1>
       <div className="starship-container">
         {starships.length ?
         <>

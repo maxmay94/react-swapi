@@ -13,8 +13,8 @@ const StarshipDetails = (props) => {
 
   return ( 
     <>
-      <h1>Starship Details!</h1>
-      <div>
+      <h1>Starship Details</h1>
+      <div className="container-div">
 
         {starshipDetails.length?
         <>
