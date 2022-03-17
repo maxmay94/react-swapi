@@ -17,11 +17,10 @@ const StarshipList = (props) => {
         <h3>Starship List!</h3>
         {starships.map(starship => (
           <Link 
-            to='/starship'
-            key={starship.name}
-            state={{starship}}
+            to={`/starship-details`}
+            key={starship.url}
+            state={{ starship }}
           >
-
             <h3>{starship.name}</h3>
           </Link>
         ))}
